@@ -229,6 +229,37 @@
           "styleext": "scss"
         }
       }
+    },
+    "customers-data": {
+      "projectType": "library",
+      "root": "libs/customers/data",
+      "sourceRoot": "libs/customers/data/src",
+      "prefix": "app",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/customers/data/tsconfig.lib.json",
+              "libs/customers/data/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/customers/data/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/customers/data/jest.config.js",
+            "tsConfig": "libs/customers/data/tsconfig.spec.json",
+            "setupFile": "libs/customers/data/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "defaultProject": "ng-cli-app"

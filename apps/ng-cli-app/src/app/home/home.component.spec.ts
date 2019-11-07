@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HomeComponent } from './home.component';
 import { EMPTY } from 'rxjs';
 import { SharedComponentsModule } from '@ng-cli-app/shared/components';
-import { CustomerService } from '@ng-cli-app/customers/ui';
+import { CustomerService } from '@ng-cli-app/customers/data';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;

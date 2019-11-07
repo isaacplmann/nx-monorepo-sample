@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map, filter } from 'rxjs/operators';
-import { CustomerService, Customer } from '@ng-cli-app/customers/ui';
+import { CustomerService, Customer } from '@ng-cli-app/customers/data';
 
 @Component({
   selector: 'app-home',

@@ -22,6 +22,9 @@
     },
     "customers-ui": {
       "tags": []
+    },
+    "customers-data": {
+      "tags": []
     }
   }
 }
