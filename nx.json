@@ -1,0 +1,18 @@
+{
+  "npmScope": "ng-cli-app",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "ng-cli-app": {
+      "tags": []
+    },
+    "ng-cli-app-e2e": {
+      "tags": []
+    }
+  }
+}
