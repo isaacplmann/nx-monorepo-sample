@@ -8,7 +8,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { NavigationComponent } from './navigation.component';
-import { AuthService } from '../../../../../../apps/ng-cli-app/src/app/auth/auth.service';
 
 describe('NavigationComponent', () => {
   let component: NavigationComponent;
@@ -26,12 +25,7 @@ describe('NavigationComponent', () => {
         MatSidenavModule,
         MatToolbarModule
       ],
-      providers: [
-        {
-          provide: AuthService,
-          useValue: {}
-        }
-      ]
+      providers: []
     }).compileComponents();
   }));
 

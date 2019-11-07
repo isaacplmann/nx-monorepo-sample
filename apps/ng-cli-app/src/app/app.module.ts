@@ -8,6 +8,7 @@ import { AuthModule } from './auth/auth.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { SharedComponentsModule } from '@ng-cli-app/shared/components';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +18,7 @@ import { SharedComponentsModule } from '@ng-cli-app/shared/components';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedComponentsModule,
+    MatButtonModule,
     AuthModule
   ],
   providers: [],
