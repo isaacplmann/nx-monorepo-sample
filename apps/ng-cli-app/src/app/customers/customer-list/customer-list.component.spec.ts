@@ -18,11 +18,9 @@ describe('CustomerListComponent', () => {
         NoopAnimationsModule,
         MatPaginatorModule,
         MatSortModule,
-        MatTableModule,
+        MatTableModule
       ],
-      providers: [
-        { provide: CustomerService, useValue: {} }
-      ]
+      providers: [{ provide: CustomerService, useValue: {} }]
     }).compileComponents();
   }));
 
@@ -36,12 +34,13 @@ describe('CustomerListComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  new Array(100).fill('Test').fill('Test', 0, 1000).forEach(() => {
-
-    it('should be a good test', (done) => {
-      expect(true).toBe(true);
-      setTimeout(() => done(), 100);
+  new Array(100)
+    .fill('Test')
+    .fill('Test', 0, 1000)
+    .forEach(() => {
+      it('should be a good test', done => {
+        expect(true).toBe(true);
+        setTimeout(() => done(), 100);
+      });
     });
-
-  });
 });

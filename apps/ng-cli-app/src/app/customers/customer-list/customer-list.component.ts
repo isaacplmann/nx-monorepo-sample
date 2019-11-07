@@ -12,7 +12,6 @@ import { Customer } from '../customer.model';
   styleUrls: ['./customer-list.component.scss']
 })
 export class CustomerListComponent implements AfterViewInit, OnInit {
-
   @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: false }) sort: MatSort;
   @ViewChild(MatTable, { static: false }) table: MatTable<Customer>;
@@ -20,9 +19,16 @@ export class CustomerListComponent implements AfterViewInit, OnInit {
   dataSource: CustomerListDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns: (keyof Customer)[] = ['id', 'first_name', 'last_name', 'email', 'city', 'country'];
+  displayedColumns: (keyof Customer)[] = [
+    'id',
+    'first_name',
+    'last_name',
+    'email',
+    'city',
+    'country'
+  ];
 
-  constructor(private customerService: CustomerService) { }
+  constructor(private customerService: CustomerService) {}
 
   ngOnInit() {
     this.dataSource = new CustomerListDataSource(this.customerService);

@@ -24,10 +24,13 @@ describe('NavigationComponent', () => {
         MatIconModule,
         MatListModule,
         MatSidenavModule,
-        MatToolbarModule,
+        MatToolbarModule
       ],
       providers: [
-        { provide: AuthService, useValue: jasmine.createSpyObj<AuthService>('AuthService', ['logout']) }
+        {
+          provide: AuthService,
+          useValue: jasmine.createSpyObj<AuthService>('AuthService', ['logout'])
+        }
       ]
     }).compileComponents();
   }));

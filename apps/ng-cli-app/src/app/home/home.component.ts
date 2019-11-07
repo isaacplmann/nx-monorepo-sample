@@ -10,16 +10,16 @@ import { map, filter } from 'rxjs/operators';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
   public customerOfTheDay$: Observable<string>;
 
-  constructor(private customerService: CustomerService) { }
+  constructor(private customerService: CustomerService) {}
 
   ngOnInit() {
     this.customerOfTheDay$ = this.customerService.getCustomerOfTheDay().pipe(
       filter(customer => !!customer),
-      map((customer: Customer) => customer.first_name + ' ' + customer.last_name)
+      map(
+        (customer: Customer) => customer.first_name + ' ' + customer.last_name
+      )
     );
   }
-
 }

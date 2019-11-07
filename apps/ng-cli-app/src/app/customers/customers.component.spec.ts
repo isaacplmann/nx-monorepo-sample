@@ -11,8 +11,7 @@ describe('CustomersComponent', () => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
       declarations: [CustomersComponent]
-    })
-      .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

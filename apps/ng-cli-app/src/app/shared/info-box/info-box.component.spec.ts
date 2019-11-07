@@ -10,13 +10,9 @@ describe('InfoBoxComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        MatCardModule,
-        MatIconModule
-      ],
+      imports: [MatCardModule, MatIconModule],
       declarations: [InfoBoxComponent]
-    })
-      .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -23,14 +23,16 @@ describe('LoginComponent', () => {
         MatButtonModule,
         ReactiveFormsModule,
         MatCardModule,
-        MatIconModule,
+        MatIconModule
       ],
       declarations: [LoginComponent],
       providers: [
-        { provide: AuthService, useValue: jasmine.createSpyObj<AuthService>('AuthService', ['logout']) }
+        {
+          provide: AuthService,
+          useValue: jasmine.createSpyObj<AuthService>('AuthService', ['logout'])
+        }
       ]
-    })
-      .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

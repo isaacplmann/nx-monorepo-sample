@@ -6,14 +6,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./info-box.component.scss']
 })
 export class InfoBoxComponent implements OnInit {
-
   @Input() icon: string;
 
   @Input() message: string;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

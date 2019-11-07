@@ -6,7 +6,9 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 
 export const routes: Routes = [
   {
-    path: '', component: CustomersComponent, children: [
+    path: '',
+    component: CustomersComponent,
+    children: [
       { path: '', pathMatch: 'full', redirectTo: 'list' },
       { path: 'list', component: CustomerListComponent }
     ]
@@ -17,4 +19,4 @@ export const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class CustomersRoutingModule { }
+export class CustomersRoutingModule {}

@@ -17,7 +17,7 @@ import { SharedModule } from '../shared/shared.module';
     MatButtonModule,
     ReactiveFormsModule,
     MatCardModule,
-    MatIconModule,
+    MatIconModule
   ]
 })
-export class AuthModule { }
+export class AuthModule {}

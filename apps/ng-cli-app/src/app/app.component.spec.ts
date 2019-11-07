@@ -7,14 +7,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule,
-        NoopAnimationsModule,
-        SharedModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule, NoopAnimationsModule, SharedModule],
+      declarations: [AppComponent]
     }).compileComponents();
   }));
 
@@ -23,5 +17,4 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   });
-
 });

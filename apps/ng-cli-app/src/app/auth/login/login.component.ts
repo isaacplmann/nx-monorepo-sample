@@ -9,7 +9,6 @@ import { catchError, tap, take } from 'rxjs/operators';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
   public form: FormGroup;
 
   public error: string;
@@ -17,20 +16,21 @@ export class LoginComponent implements OnInit {
   constructor(fb: FormBuilder, private authService: AuthService) {
     this.form = fb.group({
       username: ['', Validators.required],
-      password: ['', Validators.required],
+      password: ['', Validators.required]
     });
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   public onSubmit() {
     if (this.form.valid) {
-      this.authService.login(this.form.value.username, this.form.value.password).pipe(
-        take(1),
-        catchError(error => this.error = error.toString()),
-      ).subscribe();
+      this.authService
+        .login(this.form.value.username, this.form.value.password)
+        .pipe(
+          take(1),
+          catchError(error => (this.error = error.toString()))
+        )
+        .subscribe();
     }
   }
-
 }
