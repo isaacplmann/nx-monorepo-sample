@@ -12,7 +12,8 @@ export const routes: Routes = [
   },
   {
     path: 'customers',
-    loadChildren: './customers/customers.module#CustomersModule',
+    loadChildren: () =>
+      import('@ng-cli-app/customers/ui').then(m => m.CustomersUiModule),
     canActivate: [AuthGuard]
   }
 ];

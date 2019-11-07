@@ -19,6 +19,9 @@
     },
     "auth": {
       "tags": []
+    },
+    "customers-ui": {
+      "tags": []
     }
   }
 }
