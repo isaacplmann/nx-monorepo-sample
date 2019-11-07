@@ -1,13 +1,17 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared/shared.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedComponentsModule } from '@ng-cli-app/shared/components';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule, NoopAnimationsModule, SharedModule],
+      imports: [
+        RouterTestingModule,
+        NoopAnimationsModule,
+        SharedComponentsModule
+      ],
       declarations: [AppComponent]
     }).compileComponents();
   }));
