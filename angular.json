@@ -117,10 +117,11 @@
       "root": "apps/ng-cli-app-e2e",
       "architect": {
         "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
+          "builder": "@nrwl/cypress:cypress",
           "options": {
-            "protractorConfig": "apps/ng-cli-app-e2e/protractor.conf.js",
-            "devServerTarget": "ng-cli-app:serve"
+            "cypressConfig": "apps/ng-cli-app-e2e/cypress.json",
+            "devServerTarget": "ng-cli-app:serve",
+            "tsConfig": "apps/ng-cli-app-e2e/tsconfig.e2e.json"
           },
           "configurations": {
             "production": {
