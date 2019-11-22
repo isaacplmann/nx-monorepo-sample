@@ -23,3 +23,20 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+import '@testing-library/cypress/add-commands';
+
+// tslint:disable-next-line: no-namespace
+declare global {
+  namespace Cypress {
+    interface Chainable<Subject> {
+      login(email: string, password: string): void;
+    }
+  }
+}
+
+Cypress.Commands.add('login', (email, password) => {
+  cy.visit('/auth/login');
+  cy.findByLabelText('Username').type(email);
+  cy.findByLabelText('Password').type(password);
+  cy.contains('button', 'Login').click();
+});
