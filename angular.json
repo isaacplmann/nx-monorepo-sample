@@ -107,9 +107,7 @@
               "apps/ng-cli-app/tsconfig.app.json",
               "apps/ng-cli-app/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -135,9 +133,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/ng-cli-app-e2e/tsconfig.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -155,10 +151,7 @@
               "libs/shared/components/tsconfig.lib.json",
               "libs/shared/components/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/shared/components/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/shared/components/**"]
           }
         },
         "test": {
@@ -189,10 +182,7 @@
               "libs/auth/tsconfig.lib.json",
               "libs/auth/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/auth/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/auth/**"]
           }
         },
         "test": {
@@ -223,10 +213,7 @@
               "libs/customers/ui/tsconfig.lib.json",
               "libs/customers/ui/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/customers/ui/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/customers/ui/**"]
           }
         },
         "test": {
@@ -272,10 +259,7 @@
               "libs/customers/data/tsconfig.lib.json",
               "libs/customers/data/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/customers/data/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/customers/data/**"]
           }
         },
         "test": {
@@ -306,10 +290,7 @@
               "libs/home/ui/tsconfig.lib.json",
               "libs/home/ui/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/home/ui/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/home/ui/**"]
           }
         },
         "test": {
@@ -337,9 +318,7 @@
           "options": {
             "cypressConfig": "apps/customers-ui-e2e/cypress.json",
             "tsConfig": "apps/customers-ui-e2e/tsconfig.e2e.json",
-            "devServerTarget": "customers-ui:storybook",
-            "headless": false,
-            "watch": true
+            "devServerTarget": "customers-ui:storybook"
           },
           "configurations": {
             "headless": {
@@ -351,13 +330,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/customers-ui-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/customers-ui-e2e/**"
-            ]
+            "tsConfig": ["apps/customers-ui-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/customers-ui-e2e/**"]
           }
         }
       }
