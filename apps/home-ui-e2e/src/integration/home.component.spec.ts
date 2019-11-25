@@ -1,5 +1,5 @@
-describe('home', () => {
-  beforeEach(() => cy.login('test', 'goodpass'));
+describe('home-ui', () => {
+  beforeEach(() => cy.visit('/iframe.html?id=homecomponent--primary'));
 
   it('should display correctly', () => {
     cy.findByText('Welcome to the Demo App');

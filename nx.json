@@ -52,6 +52,9 @@
     },
     "customers-ui-e2e": {
       "tags": []
+    },
+    "home-ui-e2e": {
+      "tags": []
     }
   }
 }
