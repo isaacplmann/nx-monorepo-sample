@@ -2,6 +2,7 @@ describe('customers-ui', () => {
   beforeEach(() => cy.visit('/iframe.html?id=customerscomponent--primary'));
 
   it('should display correctly', () => {
+    cy.wait(30000);
     cy.findByText('Customer Data');
     cy.findByRole('grid')
       .get('tbody tr:first-child')
