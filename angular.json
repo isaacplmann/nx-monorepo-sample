@@ -228,7 +228,7 @@
           "builder": "@nrwl/storybook:storybook",
           "options": {
             "uiFramework": "@storybook/angular",
-            "port": 4400,
+            "port": 4401,
             "config": {
               "configFolder": "libs/customers/ui/.storybook"
             }
@@ -363,5 +363,6 @@
       }
     }
   },
+  "cli": {},
   "defaultProject": "ng-cli-app"
 }
