@@ -1,4 +1,10 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  async,
+  ComponentFixture,
+  TestBed,
+  fakeAsync,
+  tick
+} from '@angular/core/testing';
 
 import { InfoBoxComponent } from './info-box.component';
 import { MatCardModule } from '@angular/material/card';
@@ -21,7 +27,8 @@ describe('InfoBoxComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  it('should create', fakeAsync(() => {
+    tick(50);
+    expect(component.message).toBe('John');
+  }));
 });

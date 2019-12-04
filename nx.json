@@ -9,25 +9,49 @@
   },
   "projects": {
     "ng-cli-app": {
-      "tags": ["scope:app", "type:app"]
+      "tags": [
+        "scope:app",
+        "type:app"
+      ]
     },
     "ng-cli-app-e2e": {
-      "tags": ["scope:app", "type:e2e"]
+      "tags": [
+        "scope:app",
+        "type:e2e"
+      ]
     },
     "shared-components": {
-      "tags": ["scope:shared", "type:ui"]
+      "tags": [
+        "scope:shared",
+        "type:ui"
+      ]
     },
     "auth": {
-      "tags": ["scope:auth", "type:ui"]
+      "tags": [
+        "scope:auth",
+        "type:ui"
+      ]
     },
     "customers-ui": {
-      "tags": ["scope:customers", "type:ui"]
+      "tags": [
+        "scope:customers",
+        "type:ui"
+      ]
     },
     "customers-data": {
-      "tags": ["scope:customers", "type:data"]
+      "tags": [
+        "scope:customers",
+        "type:data"
+      ]
     },
     "home-ui": {
-      "tags": ["scope:home", "type:ui"]
+      "tags": [
+        "scope:home",
+        "type:ui"
+      ]
+    },
+    "shared-components-e2e": {
+      "tags": []
     }
   }
 }
