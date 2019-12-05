@@ -20,13 +20,13 @@
     "auth": {
       "tags": ["scope:auth", "type:ui"]
     },
-    "customers-ui": {
+    "feat-customers": {
       "tags": ["scope:customers", "type:ui"]
     },
     "customers-data": {
       "tags": ["scope:customers", "type:data"]
     },
-    "home-ui": {
+    "feat-home": {
       "tags": ["scope:home", "type:ui"]
     }
   }
