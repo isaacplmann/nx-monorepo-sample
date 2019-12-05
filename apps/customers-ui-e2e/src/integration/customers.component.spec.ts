@@ -1,4 +1,4 @@
-describe('customers-ui', () => {
+describe('feat-customers', () => {
   beforeEach(() => cy.visit('/iframe.html?id=customerscomponent--primary'));
 
   it('should display correctly', () => {

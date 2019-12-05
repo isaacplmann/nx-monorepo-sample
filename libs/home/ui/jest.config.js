@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'home-ui',
+  name: 'feat-home',
   preset: '../../../jest.config.js',
   coverageDirectory: '../../../coverage/libs/home/ui',
   snapshotSerializers: [

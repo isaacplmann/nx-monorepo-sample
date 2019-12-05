@@ -1,4 +1,4 @@
-describe('home-ui', () => {
+describe('feat-home', () => {
   beforeEach(() => cy.visit('/iframe.html?id=homecomponent--primary'));
 
   it('should display correctly', () => {

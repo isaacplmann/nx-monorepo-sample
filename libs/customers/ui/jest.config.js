@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'customers-ui',
+  name: 'feat-customers',
   preset: '../../../jest.config.js',
   coverageDirectory: '../../../coverage/libs/customers/ui',
   snapshotSerializers: [

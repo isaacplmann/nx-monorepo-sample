@@ -5,7 +5,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { CustomerService } from '@ng-cli-app/customers/data';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { routes } from './customers-ui.module';
+import { routes } from './feat-customers.module';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { APP_BASE_HREF } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
