@@ -1,5 +1,5 @@
 import { async, TestBed } from '@angular/core/testing';
-import { HomeUiModule } from './feat-home.module';
+import { HomeUiModule } from './home-ui.module';
 
 describe('HomeUiModule', () => {
   beforeEach(async(() => {

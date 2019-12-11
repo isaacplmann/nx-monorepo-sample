@@ -1,15 +1,13 @@
-import { CustomersComponent } from './customers.component';
-import { MatTableModule } from '@angular/material/table';
+import { APP_BASE_HREF } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { CustomerService } from '@ng-cli-app/customers/data';
-import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
-import { routes } from './feat-customers.module';
-import { CustomerListComponent } from './customer-list/customer-list.component';
-import { APP_BASE_HREF } from '@angular/common';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule } from '@angular/material/table';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { CustomerListComponent } from './customer-list/customer-list.component';
+import { CustomersComponent } from './customers.component';
 
 export default {
   title: 'CustomersComponent'

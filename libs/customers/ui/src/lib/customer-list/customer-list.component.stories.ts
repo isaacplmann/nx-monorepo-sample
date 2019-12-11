@@ -1,4 +1,4 @@
-import { CustomersUiModule } from '../feat-customers.module';
+import { CustomersUiModule } from '../customers-ui.module';
 import { CustomerService } from '@ng-cli-app/customers/data';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';

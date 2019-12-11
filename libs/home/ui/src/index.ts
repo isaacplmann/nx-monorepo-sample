@@ -1,1 +1,1 @@
-export * from './lib/feat-home.module';
+export * from './lib/home-ui.module';
