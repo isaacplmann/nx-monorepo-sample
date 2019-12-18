@@ -30,30 +30,30 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~8.2.13",
+    "@angular/animations": "~9.0.0-rc.6",
     "@angular/cdk": "~8.2.3",
-    "@angular/common": "~8.2.13",
-    "@angular/compiler": "~8.2.13",
-    "@angular/core": "~8.2.13",
-    "@angular/forms": "~8.2.13",
+    "@angular/common": "~9.0.0-rc.6",
+    "@angular/compiler": "~9.0.0-rc.6",
+    "@angular/core": "~9.0.0-rc.6",
+    "@angular/forms": "~9.0.0-rc.6",
     "@angular/material": "^8.2.3",
-    "@angular/platform-browser": "~8.2.13",
-    "@angular/platform-browser-dynamic": "~8.2.13",
-    "@angular/router": "~8.2.13",
+    "@angular/platform-browser": "~9.0.0-rc.6",
+    "@angular/platform-browser-dynamic": "~9.0.0-rc.6",
+    "@angular/router": "~9.0.0-rc.6",
     "@nrwl/angular": "8.9.0",
     "@scullyio/init": "^0.0.8",
     "@scullyio/ng-lib": "latest",
     "@scullyio/scully": "latest",
     "hammerjs": "^2.0.8",
-    "rxjs": "~6.4.0",
+    "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
-    "@angular/cli": "~8.3.17",
-    "zone.js": "~0.9.1"
+    "@angular/cli": "~9.0.0-rc.6",
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.803.17",
-    "@angular/compiler-cli": "~8.2.13",
-    "@angular/language-service": "~8.2.13",
+    "@angular-devkit/build-angular": "~0.900.0-rc.6",
+    "@angular/compiler-cli": "~9.0.0-rc.6",
+    "@angular/language-service": "~9.0.0-rc.6",
     "@babel/core": "7.5.4",
     "@nrwl/cypress": "8.9.0",
     "@nrwl/jest": "8.9.0",
@@ -84,6 +84,6 @@
     "ts-jest": "24.0.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.4.5"
+    "typescript": "~3.6.4"
   }
 }
