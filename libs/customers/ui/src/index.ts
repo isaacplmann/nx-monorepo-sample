@@ -1,1 +1,1 @@
-export * from './lib/feat-customers.module';
+export * from './lib/customers-ui.module';
